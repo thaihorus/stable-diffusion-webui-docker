@@ -2,6 +2,10 @@
 
 set -Eeuo pipefail
 
+# Update repos
+git pull origin
+git checkout master
+
 # TODO: move all mkdir -p ?
 mkdir -p /data/config/auto/scripts/
 # mount scripts individually
